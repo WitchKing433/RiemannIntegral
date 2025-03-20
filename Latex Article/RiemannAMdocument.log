@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.18)  20 MAR 2025 04:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.18)  20 MAR 2025 15:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -187,16 +187,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 {C:/Users/alexm/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Overfull \hbox (0.88968pt too wide) in paragraph at lines 96--97
-[]\OT1/cmr/m/n/10 La igual-dad en (3) im-pli-ca di-rec-ta-men-te la in-te-gra-b
-i-li-dad, con $\OML/cmm/m/it/10 I \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 f\OT1
-/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 dx$\OT1/cmr/m
-/n/10 .
- []
 
+[2]
 
+[3]
 
-[2] (RiemannAMdocument.aux
+[4]
+
+[5] (RiemannAMdocument.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -206,29 +204,34 @@ L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3260 strings out of 473523
- 51004 string characters out of 5714630
- 453568 words of memory out of 5000000
- 26497 multiletter control sequences out of 15000+600000
- 566738 words of font info for 67 fonts, out of 8000000 for 9000
+ 3265 strings out of 473523
+ 51056 string characters out of 5714630
+ 456591 words of memory out of 5000000
+ 26501 multiletter control sequences out of 15000+600000
+ 567046 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,11n,65p,269b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 56i,7n,65p,334b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/alexm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmbx12.pfb><C:/Users/alexm/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmex10.pfb><C:/Users/alexm/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmmi10.pfb><C:/Users/alexm/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/alexm/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alexm/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alexm/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/alexm/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users
-/alexm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
-C:/Users/alexm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmt
-i10.pfb><C:/Users/alexm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/symbols/msbm10.pfb>
-Output written on RiemannAMdocument.pdf (2 pages, 126503 bytes).
+cmbx10.pfb><C:/Users/alexm/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb><C:/Users/alexm/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmex10.pfb><C:/Users/alexm/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alexm/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/alexm/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/alexm/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alexm/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users
+/alexm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><
+C:/Users/alexm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
+5.pfb><C:/Users/alexm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmr7.pfb><C:/Users/alexm/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb><C:/Users/alexm/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmsy5.pfb><C:/Users/alexm/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/alexm/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/alexm/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on RiemannAMdocument.pdf (5 pages, 192396 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
+ 98 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
