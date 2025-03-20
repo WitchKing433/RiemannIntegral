@@ -1,0 +1,111 @@
+\documentclass{article}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage[spanish]{babel}
+\title{Condición de Integrabilidad de Riemann}
+\author{Alex David Montero Garay y Erick Herández Peón }
+\date{\today}
+
+\begin{document}
+	\maketitle
+	
+	\section{Equivalencias de Integrabilidad Riemann}
+	Sea \( f: [a, b] \to \mathbb{R} \) una función acotada. Las siguientes proposiciones son equivalentes:
+	
+	\begin{enumerate}
+		\item \( f \) es Riemann integrable en \([a, b]\).
+		\item Para todo \( \varepsilon > 0 \), existe una partición \( P_\varepsilon \) tal que para toda partición más fina \( P' \supseteq P_\varepsilon \) y cualquier elección de puntos \( \chi \):
+		
+		
+		\[
+		|\sigma(f, P', \chi) - I| < \varepsilon,
+		\]
+		
+		
+		donde \( \sigma(f, P', \chi) \) es una suma de Riemann y \( I = \int_a^b f(x)\, dx \).
+		\item La integral superior e inferior coinciden:
+		
+		
+		\[
+		\overline{I} = \underline{I} 
+		\]
+		
+		
+	\end{enumerate}
+	
+	\subsection*{Demostración de las equivalencias}
+	
+	\begin{proof}[Demostración (1) \(\Rightarrow\) (2)]
+		Supongamos que \( f \) es Riemann integrable. Por el criterio de Darboux, para todo \( \varepsilon > 0 \), existe una partición \( P_\varepsilon \) tal que:
+		
+		
+		\[
+		U(P_\varepsilon, f) - L(P_\varepsilon, f) < \varepsilon.
+		\]
+		
+		
+		Si \( P' \supseteq P_\varepsilon \), entonces:
+		
+		
+		\[
+		L(P_\varepsilon, f) \leq L(P', f) \leq \sigma(f, P', \chi) \leq U(P', f) \leq U(P_\varepsilon, f).
+		\]
+		
+		
+		Como \( I = \int_a^b f(x)\, dx \), se cumple:
+		
+		
+		\[
+		|\sigma(f, P', \chi) - I| \leq U(P', f) - L(P', f) < \varepsilon. \quad \qedhere
+		\]
+	\end{proof}
+	
+	\begin{proof}[Demostración (2) \(\Rightarrow\) (3)]
+		Dado \( \varepsilon > 0 \), por hipótesis existe \( P_\varepsilon \) tal que para todo \( P' \supseteq P_\varepsilon \):
+		
+		
+		\[
+		I - \varepsilon < \sigma(f, P', \chi) < I + \varepsilon.
+		\]
+		
+		
+		Tomando supremo e ínfimo sobre las sumas de Riemann:
+		
+		
+		\[
+		I - \varepsilon \leq L(P', f) \leq \underline{(I)}  \leq \overline{(I)}  \leq U(P', f) \leq I + \varepsilon.
+		\]
+		
+		
+		Como \( \varepsilon \) es arbitrario, se concluye:
+		
+		
+		\[
+		\overline{I} = \underline{I} = I. \quad \qedhere
+		\]
+	\end{proof}
+	
+	\begin{proof}[Demostración (3) \(\Rightarrow\) (1)]
+		Por definición, \( f \) es Riemann integrable si y solo si:
+		
+		
+		\[
+		\overline{I} = \underline{I} .
+		\]
+		
+		
+		La igualdad en (3) implica directamente la integrabilidad, con \( I = \int_a^b f(x)\, dx \). \quad \qedhere
+	\end{proof}
+	
+	
+	
+	\[
+	\boxed{
+		\begin{aligned}
+			&1 \implies 2 \implies 3 \implies 1 \\
+			&\text{Equivalencia completa.}
+		\end{aligned}
+	}
+	\]
+	
+	
+\end{document}
