@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "FunctionEvaluator/1.0.0": {
+        "dependencies": {
+          "IFunctionEvaluator": "1.0.0.0"
+        },
+        "runtime": {
+          "FunctionEvaluator.dll": {}
+        }
+      },
+      "IFunctionEvaluator/1.0.0.0": {
+        "runtime": {
+          "IFunctionEvaluator.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FunctionEvaluator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IFunctionEvaluator/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

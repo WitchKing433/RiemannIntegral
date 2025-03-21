@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <BaseOutputPath>bin\</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="FunctionEvaluatorCopy.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="IFunctionEvaluator">
+      <HintPath>..\IFunctionEvaluator.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
