@@ -4,7 +4,7 @@ namespace FuncionEvaluator
 {
     public class FunctionEvaluator : IFunctionEvaluator
     {
-        protected double functionWidth = 2 * PI;
+        protected double functionWidth = 10;
         //2.0 * Math.PI;
         protected double functionHeight = 10;
         protected int centerX;
@@ -25,7 +25,7 @@ namespace FuncionEvaluator
             int yPixel = 0;
             double x = functionWidth * (xPixel - centerX) / drawWidth;
 
-            double y = x;
+            double y = Sin(x)+Cos(x)*Atan(Sin(x*x))+4;
             //Cos(x) * x * Sin(3 * x) + 6
             yPixel = centerY - (int)(drawHeight * y / functionHeight);
             return yPixel;

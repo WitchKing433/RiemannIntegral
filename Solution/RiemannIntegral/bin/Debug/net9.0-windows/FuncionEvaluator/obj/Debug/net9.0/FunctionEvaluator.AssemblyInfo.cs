@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FunctionEvaluator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ecb0675137f17054351fe309acf1b5007436e18")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7098b1854f9f80217ece66bd548fa029101b4cfc")]
 [assembly: System.Reflection.AssemblyProductAttribute("FunctionEvaluator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FunctionEvaluator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
