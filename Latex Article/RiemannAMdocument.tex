@@ -8,14 +8,13 @@
 \begin{document}
 	\maketitle
 	
-	\section{Equivalencias de Integrabilidad Riemann}
-	Sea \( f: [a, b] \to \mathbb{R} \) una función acotada. Las siguientes proposiciones son equivalentes:
-	
+	\section*{Equivalencias de Integrabilidad Riemann}
+	Sea \( f: [a, b] \to \mathbb{R} \) una función acotada. 
 	Demostrar que:
 	\[
 	   f \in R:[a,b] \iff \forall \varepsilon >0   [\exists P_\varepsilon :  P' \supseteq P_\varepsilon 	|\sigma(f, P', \chi) - I| < \varepsilon] \iff 	\overline{ I } = \underline{I}.
 	\]
-	Condiciones a Demostrar:
+ Las siguientes proposiciones son equivalentes:
 	\begin{enumerate}
 		\item f es Riemann integrable en [a, b]. \[  f \in R:[a,b] \]
 		\item  para todo epsilon, existe una partición P subepsilon tal que para toda partición más fina P subepsilon se encuentre contenida en la partición P' y cualquier elección de puntos Xi: 
@@ -33,9 +32,9 @@
 		
 	\end{enumerate}
 	
-	\subsection*{Demostración de las equivalencias}
+	\section*{Demostración de las equivalencias}
 	
-	\begin{proof}\textbf{Demostrar (1) \(\Rightarrow\) (2)}.\\
+	\begin{proof}\textbf{(1) \(\Rightarrow\) (2)}.\\
 	Hipótesis:
 	\( f \) es Riemann integrable en \([a, b]\), es decir, la integral superior \( \overline{I} \) y la integral inferior \( \underline{I} \) coinciden:  
 	\[
@@ -48,13 +47,13 @@
 	|\sigma(f, P', \chi) - I| < \varepsilon.
 	\]
 	
-	1. Integral superior e inferior:
+	I. Integral superior e inferior:
 	\[
 	\overline{I} = \inf_{P} U(f, P), \quad \underline{I} = \sup_{P} L(f, P),
 	\]  
 	donde \( U(f, P) \) y \( L(f, P) \) son las sumas de Darboux (superior e inferior) asociadas a una partición \( P \).
 	
-	2. Criterio de Darboux para integrabilidad: 
+	II. Criterio de Darboux para integrabilidad: 
 	Si \( f \) es Riemann integrable, entonces para todo \( \varepsilon > 0 \), existe una partición \( P_\varepsilon \) tal que:  
 	\[
 	U(f, P_\varepsilon) - L(f, P_\varepsilon) < \varepsilon.
@@ -64,7 +63,7 @@
 	\[
 	U(f, P_\varepsilon) - L(f, P_\varepsilon) < \varepsilon.
 	\]
-	Sea \( P' \supseteq P_\varepsilon \) un refinamiento de \( P_\varepsilon \).\\ 
+	Sea \( P' \supseteq P_\varepsilon \) un afinamiento de \( P_\varepsilon \).\\ 
 	\textbf{Por propiedades de las sumas de Darboux:}  .\\
 	a). Monotonía:
 	\[
@@ -103,7 +102,7 @@
 	\]
 	
 	Conclusión:
-	Si \( f \) es Riemann integrable en \([a, b]\), entonces para todo \( \varepsilon > 0 \), existe una partición \( P_\varepsilon \) tal que cualquier refinamiento \( P' \supseteq P_\varepsilon \) cumple \( |\sigma(f, P', \chi) - I| < \varepsilon \). Esto demuestra la implicación:  
+	Si \( f \) es Riemann integrable en \([a, b]\), entonces para todo \( \varepsilon > 0 \), existe una partición \( P_\varepsilon \) tal que cualquier afinamiento \( P' \supseteq P_\varepsilon \) cumple \( |\sigma(f, P', \chi) - I| < \varepsilon \). Esto demuestra la implicación:  
 	\[
 	f \in \mathcal{R}[a, b] \implies \forall \varepsilon > 0,\, \exists P_\varepsilon : P' \supseteq P_\varepsilon \implies |\sigma(f, P', \chi) - I| < \varepsilon.
 	\]
@@ -116,7 +115,7 @@
 		
 	\end{proof}
 	
-	\begin{proof}\textbf{Demostrar (2) \(\Rightarrow\) (3)}.\\
+	\begin{proof}\textbf{(2) \(\Rightarrow\) (3)}.\\
 	Hipótesis: 
 	Para todo \( \varepsilon > 0 \), existe una partición \( P_\varepsilon \) tal que, para cualquier afinamiento \( P' \supseteq P_\varepsilon \) y cualquier elección de puntos de muestra \( \chi \):  
 	\[
@@ -127,58 +126,53 @@
 	\overline{I} = \underline{I}.
 	\]
 	
-	1. Integral superior (Darboux):
+	I. Integral superior (Darboux):
 	\[
 	\overline{I} = \inf_{P} U(f, P),
 	\]  
 	donde \( U(f, P) = \sum_{i=1}^n M_i \Delta x_i \), con \( M_i = \sup_{[x_{i-1}, x_i]} f(x) \).  
 	
-	2. Integral inferior (Darboux): 
+	II. Integral inferior (Darboux): 
 	\[
 	\underline{I} = \sup_{P} L(f, P),
 	\]  
 	donde \( L(f, P) = \sum_{i=1}^n m_i \Delta x_i \), con \( m_i = \inf_{[x_{i-1}, x_i]} f(x) \).  
 	
-	3. *Propiedad fundamental:*  
+	III. Propiedad fundamental:  
 	Para toda partición \( P \), \( L(f, P) \leq \underline{I} \leq \overline{I} \leq U(f, P) \).  
-	
-	
-		
-		
-		Tomando supremo e ínfimo sobre las sumas de Riemann:
+			
+	Tomando supremo e ínfimo sobre las sumas de Riemann:
 		
 		
 		\[
 		I - \varepsilon \leq L(P', f) \leq \underline{(I)}  \leq \overline{(I)}  \leq U(P', f) \leq I + \varepsilon.
-		\]
-		
-		
-		Como \( \varepsilon \) es arbitrario, se concluye:
+		\]			
+	Como \( \varepsilon \) es arbitrario, se concluye:
 		
 		
 		\[
 		\overline{I} = \underline{I} = I. \quad \qedhere
 		\]
-		Por hipótesis, para todo \( \varepsilon > 0 \), existe \( P_\varepsilon \) tal que:  
+	Por hipótesis, para todo \( \varepsilon > 0 \), existe \( P_\varepsilon \) tal que:  
 		\[
 		|\sigma(f, P', \chi) - I| < \varepsilon \quad \forall P' \supseteq P_\varepsilon, \, \forall \chi.
 		\]  
-		Esto implica:  
+	Esto implica:  
 		\[
 		I - \varepsilon < \sigma(f, P', \chi) < I + \varepsilon.
 		\]  
-		Como \( U(f, P') = \sup_{\chi} \sigma(f, P', \chi) \), se tiene:  
+	Como \( U(f, P') = \sup_{\chi} \sigma(f, P', \chi) \), se tiene:  
 		\[
 		U(f, P') \leq I + \varepsilon.
 		\]  
 		
-		Cota para la suma inferior \( L(f, P') \):
-		Como \( L(f, P') = \inf_{\chi} \sigma(f, P', \chi) \), se tiene:  
+	Cota para la suma inferior \( L(f, P') \):
+	Como \( L(f, P') = \inf_{\chi} \sigma(f, P', \chi) \), se tiene:  
 		\[
 		L(f, P') \geq I - \varepsilon.
 		\]  
 		\textbf{Acotación de \( \overline{I} \):}
-		Por definición, \( \overline{I} \) es el ínfimo de todas las sumas superiores. Dado que \( U(f, P') \leq I + \varepsilon \) para todo refinamiento \( P' \supseteq P_\varepsilon \):  
+		Por definición, \( \overline{I} \) es el ínfimo de todas las sumas superiores. Dado que \( U(f, P') \leq I + \varepsilon \) para todo afinamiento \( P' \supseteq P_\varepsilon \):  
 		\[
 		\overline{I} \leq I + \varepsilon.
 		\]  
@@ -217,7 +211,7 @@
 		\]
 	\end{proof}
 	
-	\begin{proof}\textbf{Demostrar (3) \(\Rightarrow\)(1)}:\\
+	\begin{proof}\textbf{(3) \(\Rightarrow\)(1)}:\\
 		Hipótesis:
 		\[
 		\overline{I} = \underline{I} = I,
